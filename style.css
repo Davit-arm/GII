@@ -238,6 +238,117 @@ svg:hover path{
     height:20%;
     border-radius:15px;
 }
+.modal__overlay {
+    display:flex;
+    position:fixed;
+    z-index:999999999;
+    height:100%;
+    width:100%;
+    background-color:rgba(32, 32, 32, 0.808);
+    backdrop-filter: blur(5px);
+    align-items:center;
+    justify-content:center;
+    display:none;
+}
+
+.modal {
+    width:85%;
+    height:85%;
+    background:black;
+    display:flex;
+    flex-direction:column;
+    background:url(imgs/defaultmovie.png);
+    background-size:cover;
+    background-position:center 30%;
+    justify-content:space-between;
+    align-items:flex-start;
+    border-radius:25px;
+    overflow:hidden;
+    opacity:0;
+    /* flex:0; */
+}
+
+.close {
+    margin:10px 20px;
+    background:none;
+    border:none;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    cursor:pointer
+}
+
+.movieInfo {
+        background-color:rgba(32, 31, 31, 0.63);
+        backdrop-filter: blur(5px);
+        height:30%;
+        display:flex;
+        justify-content:space-between;
+        padding:50px 50px;
+        width:100%;
+}
+
+.movieInfo .description {
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding:0 10px;
+}
+
+.modal__name {
+    display:flex;
+    flex-direction:column;
+    gap:5px
+}
+
+.modal__name h2 {
+    color:white;
+}
+
+.description h3 {
+    text-align:start
+}
+
+h3  {
+    color:lightgrey;
+}
+
+.modal__rating {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding-top:20px;
+    justify-content:flex-start
+}
+
+.Mrating {
+    display:flex;
+    align-items:center;
+}
+
+.Mrating h2{
+    font-size:50px;
+    color:white;
+}
+
+.Mrating img {
+    width:45px;
+    height: 45px;
+}
+
+.play {
+    width:200px;
+    height: 100px;
+    font-size:35px;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.192);
+    backdrop-filter:blur(25px);
+    border:none;
+    padding:5px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
 
 .hero {
     display:flex;
@@ -273,6 +384,7 @@ svg:hover path{
     border-radius:100px;
     opacity:0;
     font-weight:bold;
+    cursor:pointer;
 }
 
 .slidebtn:hover {
@@ -286,6 +398,7 @@ svg:hover path{
     transition:box-shadow 0.5s ease,opacity 0.3s ease,transform 0.5s ease;
     overflow: hidden;
     border-radius:25px;
+    cursor:pointer;
 }
 
 
@@ -393,6 +506,7 @@ svg:hover path{
     background-size:cover;
     background-position:center;
     transition:transform 0.5s ease,box-shadow 0.5s ease;
+    cursor:pointer;
 }
 
 .movies__thumbnails:hover {
@@ -459,6 +573,7 @@ svg:hover path{
     align-items:flex-end;
     border-radius:25px;
     transition:transform 0.5s ease,box-shadow 0.5s ease;
+    cursor:pointer;
 }
 
 
